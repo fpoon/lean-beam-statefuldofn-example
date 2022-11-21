@@ -1,0 +1,6 @@
+### Running
+To run this application in streaming mode use command
+```sh
+./gradlew run \
+--args='--runner=DataflowRunner --usePublicIps=false --project=<your project> --region=europe-west1 --tempLocation=gs://<your bucket>/temp/ --topic=projects/<your project>/topics/<your bucket> --dataset=<your dataset>'
+```
